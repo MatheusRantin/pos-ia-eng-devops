@@ -225,6 +225,46 @@ Consulte os ADRs em `docs/adr/`:
 - [ADR 0008](docs/adr/0008-estrategia-de-model-serving.md) — Estratégia de Model Serving com MLflow
 
 
+
+
+
+# Resumo das Aulas — DevOps, DataOps e MLOps
+
+## Aula 1 — Fundamentos de DevOps
+
+Nesta aula, comecei a entender melhor os fundamentos de **DevOps** e como eles podem ser aplicados em projetos de dados. Vimos que a ideia não envolve apenas ferramentas, mas também melhorar a colaboração, automatizar tarefas e tornar o desenvolvimento mais organizado.
+
+Na parte prática, trabalhamos principalmente com **containers utilizando Podman**. Aprendi como podemos empacotar uma aplicação junto com suas dependências e utilizar o **Podman Compose** para executar vários serviços em conjunto, como nossa aplicação, o PostgreSQL e um serviço de armazenamento.
+
+Também vimos algumas boas práticas com **Git e GitHub**, como organizar branches, manter um histórico de alterações mais claro e evitar colocar dados ou informações sensíveis no repositório.
+
+Além disso, tivemos uma introdução ao conceito de **Infrastructure as Code (IaC)** e aos **ADRs**, que servem para registrar decisões importantes tomadas durante o desenvolvimento de um projeto e explicar os motivos dessas escolhas.
+
+---
+
+## Aula 2 — CI/CD, Qualidade de Dados e DataOps
+
+Nesta aula, entendi melhor como o **CI/CD** pode ajudar a organizar e automatizar algumas etapas do desenvolvimento. Vimos o **GitHub Actions** e como ele pode executar verificações, testes e builds automaticamente quando fazemos alterações no projeto.
+
+Também trabalhamos com testes de qualidade de dados usando o **Soda Core**. Aprendi que, além de verificar se o código está funcionando, também é importante garantir que os dados estejam corretos, sem valores ausentes, duplicados ou fora do padrão esperado. Essas validações podem ser adicionadas ao próprio fluxo de CI.
+
+Outro assunto foi o **DataOps**, mostrando como automação, testes e monitoramento podem ajudar a manter os processos de dados mais confiáveis e facilitar a identificação de problemas.
+
+O **Kubernetes e o Kind** também foram citados durante a aula, principalmente para entendermos sua função no gerenciamento e execução de containers, mas essa parte ficou apenas como uma introdução e não foi colocada em prática durante a aula.
+
+---
+
+## Aula 3 — MLOps e Operacionalização de Modelos
+
+Por fim, entendi melhor o conceito de **MLOps** e como ele ajuda a organizar todo o processo de desenvolvimento de modelos de Machine Learning, desde os primeiros experimentos e treinamentos até a disponibilização e acompanhamento do modelo.
+
+Vimos o **MLflow**, que permite registrar os experimentos realizados, acompanhar resultados e comparar diferentes versões de um modelo. Também conhecemos o **DVC**, utilizado para controlar as versões dos dados e facilitar a reprodução de experimentos anteriores.
+
+Outro assunto abordado foi como os modelos podem ser disponibilizados para uso depois de treinados, além da importância de acompanhar seu funcionamento ao longo do tempo para identificar possíveis quedas de desempenho.
+
+Por fim, vimos alguns conceitos relacionados à organização e governança de projetos de Machine Learning, incluindo rastreabilidade dos dados, documentação dos modelos e cuidados relacionados à ética, viés e uso adequado dos dados.
+
+
 ---
 
 > 💡 **Dica**: Use `make help` para ver todos os targets disponíveis no Makefile.
